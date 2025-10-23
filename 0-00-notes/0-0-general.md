@@ -11,4 +11,8 @@ Interpreted language
 - does interpretation
 - has tricks:
   - JIT can compile js (cause it's expensive to interpret everytime) code to machine code directly and stores it directly into the heap and marks that memory as executable
-  - Garbage Collection
+  - Garbage Collection is part of runtime. Managed by runtime. Mem locations ledger
+  - Efficient heap memory management - js can be dynamically typed
+    - primitives in the stack
+    - objects (and arrays) are in the heap. prop values/names are stored in separate arrays at corresponding indexes
+  - Inline caching - caching offsets for expensive lookups ^. Cache uses hashing for easier find
