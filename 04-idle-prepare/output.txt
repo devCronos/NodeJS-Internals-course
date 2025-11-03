@@ -1,0 +1,1793 @@
+13    08:46:37 execve("/usr/local/bin/node", ["node", "04-idle-prepare/040-idleprepare."...], 0xffffd688ab48 /* 8 vars */) = 0
+13    08:46:37 set_tid_address(0xffff9e2ace80) = 13
+13    08:46:37 brk(NULL)                = 0xaaaae8cb4000
+13    08:46:37 brk(0xaaaae8cb6000)      = 0xaaaae8cb6000
+13    08:46:37 mmap(0xaaaae8cb4000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xaaaae8cb4000
+13    08:46:37 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/lib/libstdc++.so.6", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/usr/local/lib/libstdc++.so.6", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/usr/lib/libstdc++.so.6", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+13    08:46:37 fcntl(3, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 fstat(3, {st_mode=S_IFREG|0755, st_size=2754992, ...}) = 0
+13    08:46:37 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+13    08:46:37 mmap(NULL, 2772992, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff9df45000
+13    08:46:37 mmap(0xffff9e1d7000, 77824, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x292000) = 0xffff9e1d7000
+13    08:46:37 mmap(0xffff9e1e6000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff9e1e6000
+13    08:46:37 close(3)                 = 0
+13    08:46:37 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/usr/local/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/usr/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+13    08:46:37 fcntl(3, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 fstat(3, {st_mode=S_IFREG|0644, st_size=133008, ...}) = 0
+13    08:46:37 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+13    08:46:37 mmap(NULL, 200704, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff9df14000
+13    08:46:37 mmap(0xffff9df43000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x1f000) = 0xffff9df43000
+13    08:46:37 close(3)                 = 0
+13    08:46:37 mprotect(0xffff9e1d7000, 57344, PROT_READ) = 0
+13    08:46:37 mprotect(0xffff9e2a9000, 4096, PROT_READ) = 0
+13    08:46:37 mprotect(0xffff9df43000, 4096, PROT_READ) = 0
+13    08:46:37 mprotect(0xaaaae5c7a000, 1007616, PROT_READ) = 0
+13    08:46:37 set_tid_address(0xffff9e2ace80) = 13
+13    08:46:37 mmap(NULL, 77824, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e293000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e292000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e291000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e290000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e28f000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e28e000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e28d000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9e28c000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df13000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df12000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df11000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df10000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df0e000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df0d000
+13    08:46:37 brk(0xaaaae8cb7000)      = 0xaaaae8cb7000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df0c000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df0b000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df0a000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df09000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df08000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df07000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df05000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df04000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df03000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df02000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9df00000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9defe000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9defd000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9defc000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9defa000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9def9000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9def7000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9def6000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9def5000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9def1000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9def0000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deef000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deee000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deec000
+13    08:46:37 brk(0xaaaae8cb8000)      = 0xaaaae8cb8000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deeb000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dee7000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dee6000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dee4000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dee2000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dede000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deda000
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, ~[ILL TRAP BUS FPE SEGV RTMIN RT_1 RT_2], [], 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+13    08:46:37 rt_sigaction(SIGILL, {sa_handler=0xaaaae2451340, sa_mask=~[ILL TRAP BUS FPE SEGV RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+13    08:46:37 rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9ded9000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9ded7000
+13    08:46:37 mmap(NULL, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9ded1000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9decd000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:46:37 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:46:37 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+13    08:46:37 rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:46:37 rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_BLOCK, ~[], [USR1], 8) = 0
+13    08:46:37 rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+13    08:46:37 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:46:37 fcntl(0, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:46:37 ioctl(0, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 ioctl(0, TCGETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:46:37 fcntl(1, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:46:37 ioctl(1, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 ioctl(1, TCGETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:46:37 fcntl(2, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:46:37 ioctl(2, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 ioctl(2, TCGETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:46:37 rt_sigaction(SIGINT, {sa_handler=0xaaaae1477e44, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 rt_sigaction(SIGTERM, {sa_handler=0xaaaae1477e44, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+13    08:46:37 fcntl(0, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 fcntl(1, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 fcntl(2, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 fcntl(3, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(4, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(5, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(6, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(7, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(8, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(9, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(10, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(11, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(12, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(13, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(14, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(15, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 fcntl(16, F_SETFD, FD_CLOEXEC) = -1 EBADF (Bad file descriptor)
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9decc000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deca000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dec6000
+13    08:46:37 munmap(0xffff9deca000, 8192) = 0
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9debe000
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deb7000
+13    08:46:37 munmap(0xffff9dec6000, 16384) = 0
+13    08:46:37 brk(0xaaaae8cb9000)      = 0xaaaae8cb9000
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 openat(AT_FDCWD, "/etc/ssl/openssl.cnf", O_RDONLY|O_LARGEFILE) = 3
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9decb000
+13    08:46:37 read(3, "#\n# OpenSSL example configuratio"..., 1024) = 1024
+13    08:46:37 read(3, "and 'ts'.\n# Add a simple OID lik"..., 1024) = 1024
+13    08:46:37 read(3, "r provider(s), you most\n# probab"..., 1024) = 1024
+13    08:46:37 read(3, "umber\t= $dir/crlnumber\t# the cur"..., 1024) = 1024
+13    08:46:37 read(3, "d attributes must be the same, a"..., 1024) = 1024
+13    08:46:37 read(3, "ets a mask for permitted string "..., 1024) = 1024
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deaf000
+13    08:46:37 read(3, " (eg, company)\n#1.organizationNa"..., 1024) = 1024
+13    08:46:37 read(3, "tAltName and issuerAltname.\n# Im"..., 1024) = 1024
+13    08:46:37 read(3, "coding of an extension: beware e"..., 1024) = 1024
+13    08:46:37 read(3, "ficates that aren't\n# deprecated"..., 1024) = 1024
+13    08:46:37 read(3, "r_policies\t= tsa_policy2, tsa_po"..., 1024) = 1024
+13    08:46:37 read(3, "italsignature\nunprotected_errors"..., 1024) = 1024
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9deca000
+13    08:46:37 read(3, "cert = $insta::certout # insta.c"..., 1024) = 123
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dec8000
+13    08:46:37 read(3, "", 1024)        = 0
+13    08:46:37 munmap(0xffff9decb000, 4096) = 0
+13    08:46:37 close(3)                 = 0
+13    08:46:37 munmap(0xffff9dec8000, 8192) = 0
+13    08:46:37 munmap(0xffff9deca000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9decb000
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dea7000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dec9000
+13    08:46:37 munmap(0xffff9decb000, 4096) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dec7000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dea3000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de9f000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9decb000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9dec6000
+13    08:46:37 brk(0xaaaae8cba000)      = 0xaaaae8cba000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de9e000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de9d000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de9c000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de9b000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de97000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de96000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de95000
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de8d000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de8c000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de8b000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de8a000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de89000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de88000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de87000
+13    08:46:37 munmap(0xffff9de87000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de87000
+13    08:46:37 munmap(0xffff9de87000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de87000
+13    08:46:37 munmap(0xffff9de87000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de87000
+13    08:46:37 munmap(0xffff9de87000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de87000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de86000
+13    08:46:37 munmap(0xffff9de86000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de86000
+13    08:46:37 munmap(0xffff9de86000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de86000
+13    08:46:37 munmap(0xffff9de86000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de86000
+13    08:46:37 munmap(0xffff9de86000, 4096) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de85000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de84000
+13    08:46:37 munmap(0xffff9de84000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de84000
+13    08:46:37 munmap(0xffff9de84000, 4096) = 0
+13    08:46:37 getrandom("\x5f\xdd\xa2\x16\x6e\x51\x14\x36\x6f\x11\xb9\x81\xc5\x80\xb7\x06\xd3\x05\xb4\xf0\x09\x47\xed\x50\x08\x3c\x00\x06\x82\x62\x09\xbe"..., 48, 0) = 48
+13    08:46:37 getpid()                 = 13
+13    08:46:37 getpid()                 = 13
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9de84000
+13    08:46:37 clock_getres(CLOCK_MONOTONIC_COARSE, {tv_sec=0, tv_nsec=10000000}) = 0
+13    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 3
+13    08:46:37 pipe2([4, 5], O_CLOEXEC) = 0
+13    08:46:37 write(5, "*", 1)         = 1
+13    08:46:37 pipe2([6, 7], O_NONBLOCK|O_CLOEXEC) = 0
+13    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 8
+13    08:46:37 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+13    08:46:37 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+13    08:46:37 membarrier(MEMBARRIER_CMD_REGISTER_PRIVATE_EXPEDITED, 0) = 0
+13    08:46:37 mmap(NULL, 8400896, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9d681000
+13    08:46:37 mprotect(0xffff9d683000, 8392704, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [USR1], 8) = 0
+13    08:46:37 clone(child_stack=0xffff9de839a0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[14], tls=0xffff9de83aa0, child_tidptr=0xffff9e2ace80) = 14
+14    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+14    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 futex(0xffff9de84550, FUTEX_WAIT_PRIVATE, 2147483648, NULL <unfinished ...>
+14    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 9
+14    08:46:37 pipe2([10, 11], O_NONBLOCK|O_CLOEXEC) = 0
+14    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 12
+14    08:46:37 futex(0xffff9de84550, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = 0
+14    08:46:37 <... futex resumed>)     = 1
+13    08:46:37 prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+14    08:46:37 epoll_ctl(9, EPOLL_CTL_ADD, 10, {events=EPOLLIN, data=0xa} <unfinished ...>
+13    08:46:37 <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+14    08:46:37 <... epoll_ctl resumed>) = 0
+13    08:46:37 mmap(NULL, 8400896, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+14    08:46:37 epoll_ctl(9, EPOLL_CTL_ADD, 12, {events=EPOLLIN, data=0xc} <unfinished ...>
+13    08:46:37 <... mmap resumed>)      = 0xffff9ce7e000
+14    08:46:37 <... epoll_ctl resumed>) = 0
+13    08:46:37 mprotect(0xffff9ce80000, 8392704, PROT_READ|PROT_WRITE <unfinished ...>
+14    08:46:37 epoll_pwait(9,  <unfinished ...>
+13    08:46:37 <... mprotect resumed>)  = 0
+13    08:46:37 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [USR1], 8) = 0
+13    08:46:37 clone(child_stack=0xffff9d6809a0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[15], tls=0xffff9d680aa0, child_tidptr=0xffff9e2ace80) = 15
+15    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+15    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+13    08:46:37 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+13    08:46:37 mmap(NULL, 8400896, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9c67b000
+13    08:46:37 mprotect(0xffff9c67d000, 8392704, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [USR1], 8) = 0
+13    08:46:37 clone(child_stack=0xffff9ce7d9a0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+16    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+13    08:46:37 <... clone resumed>, parent_tid=[16], tls=0xffff9ce7daa0, child_tidptr=0xffff9e2ace80) = 16
+16    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+16    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+13    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+13    08:46:37 mmap(NULL, 8400896, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9be78000
+13    08:46:37 mprotect(0xffff9be7a000, 8392704, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [USR1], 8) = 0
+13    08:46:37 clone(child_stack=0xffff9c67a9a0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[17], tls=0xffff9c67aaa0, child_tidptr=0xffff9e2ace80) = 17
+17    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+17    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+17    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+13    08:46:37 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+13    08:46:37 mmap(NULL, 8400896, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b675000
+13    08:46:37 mprotect(0xffff9b677000, 8392704, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [USR1], 8) = 0
+13    08:46:37 clone(child_stack=0xffff9be779a0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[18], tls=0xffff9be77aa0, child_tidptr=0xffff9e2ace80) = 18
+18    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+18    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+18    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+13    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:46:37 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+13    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 <... futex resumed>)     = 0
+13    08:46:37 futex(0xffffefbd6184, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+18    08:46:37 futex(0xffffefbd6184, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483666, NULL <unfinished ...>
+13    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483666, NULL <unfinished ...>
+18    08:46:37 <... futex resumed>)     = 0
+18    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1) = 1
+16    08:46:37 <... futex resumed>)     = 0
+18    08:46:37 futex(0xffff9be778e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+16    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17    08:46:37 <... futex resumed>)     = 0
+16    08:46:37 <... futex resumed>)     = 1
+17    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+16    08:46:37 futex(0xffff9ce7d8e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+17    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 <... futex resumed>)     = 0
+17    08:46:37 futex(0xffff9c67a8e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = 0
+15    08:46:37 <... futex resumed>)     = 1
+13    08:46:37 openat(AT_FDCWD, "/proc/self/auxv", O_RDONLY|O_LARGEFILE <unfinished ...>
+15    08:46:37 futex(0xffff9d6808e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+13    08:46:37 <... openat resumed>)    = 13
+13    08:46:37 readv(13, [{iov_base="!\0\0\0\0\0\0", iov_len=7}, {iov_base="\0\0\200*\236\377\377\0\0003\0\0\0\0\0\0\0p\22\0\0\0\0\0\0\20\0\0\0\0\0\0"..., iov_len=1024}], 2) = 368
+13    08:46:37 lseek(13, -328, SEEK_CUR) = 40
+13    08:46:37 close(13)                = 0
+13    08:46:37 openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY|O_LARGEFILE) = 13
+13    08:46:37 readv(13, [{iov_base="processor\t: 0\nBogoMIPS\t: 48.00\nF"..., iov_len=255}, {iov_base="er\t: 0x61\nCPU architecture: 8\nCP"..., iov_len=1024}], 2) = 676
+13    08:46:37 readv(13, [{iov_base="", iov_len=91}, {iov_base="", iov_len=1024}], 2) = 0
+13    08:46:37 close(13)                = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b674000
+13    08:46:37 openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY|O_LARGEFILE) = 13
+13    08:46:37 readv(13, [{iov_base="processor\t: 0\nBogoMIPS\t: 48.00\nF"..., iov_len=675}, {iov_base="\n", iov_len=1024}], 2) = 676
+13    08:46:37 close(13)                = 0
+13    08:46:37 munmap(0xffff9b674000, 4096) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b673000
+13    08:46:37 mmap(NULL, 524288, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xffff9b5f3000
+13    08:46:37 madvise(0xffff9b5f3000, 524288, MADV_DONTFORK) = 0
+13    08:46:37 mprotect(0xffff9b5f3000, 16384, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 rt_sigaction(SIGSEGV, {sa_handler=0xaaaae1477f00, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 13
+13    08:46:37 pipe2([14, 15], O_NONBLOCK|O_CLOEXEC) = 0
+13    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 16
+13    08:46:37 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5e3000
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5db000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5d7000
+13    08:46:37 munmap(0xffff9b5d7000, 16384) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5d6000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5d5000
+13    08:46:37 openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 17
+13    08:46:37 fcntl(17, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 read(17, "0::/\n", 1023) = 5
+13    08:46:37 close(17)                = 0
+13    08:46:37 openat(AT_FDCWD, "/sys/fs/cgroup//memory.max", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 17
+13    08:46:37 fcntl(17, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 read(17, "max\n", 31)    = 4
+13    08:46:37 close(17)                = 0
+13    08:46:37 openat(AT_FDCWD, "/sys/fs/cgroup//memory.high", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 17
+13    08:46:37 fcntl(17, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 read(17, "max\n", 31)    = 4
+13    08:46:37 close(17)                = 0
+13    08:46:37 openat(AT_FDCWD, "/proc/meminfo", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 17
+13    08:46:37 fcntl(17, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 read(17, "MemTotal:        6066752 kB\nMemF"..., 4095) = 1392
+13    08:46:37 close(17)                = 0
+13    08:46:37 mremap(0xffffefbd5000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbd4000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbd3000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbd2000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbd1000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbd0000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbcf000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbce000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbcd000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbcc000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbcb000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbca000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc9000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc8000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc7000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc6000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc5000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc4000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc3000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc2000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc1000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbc0000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbbf000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbbe000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbbd000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbbc000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbbb000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbba000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbb9000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbb8000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbb7000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbb6000, 4096, 8192, 0) = -1 ENOMEM (Out of memory)
+13    08:46:37 mremap(0xffffefbb5000, 4096, 8192, 0) = -1 EFAULT (Bad address)
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5d3000
+13    08:46:37 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5c3000
+13    08:46:37 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5b3000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5b1000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5b0000
+13    08:46:37 mmap(NULL, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b5a1000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 getpid()                 = 13
+13    08:46:37 mmap(0xaaaae18c0000, 268693504, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xffff8b562000
+13    08:46:37 madvise(0xffff8b562000, 268693504, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0xffff8b562000, 122880) = 0
+13    08:46:37 munmap(0xffff9b580000, 135168) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b59f000
+13    08:46:37 mmap(0x7b2ce6c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7b2ce6c0000
+13    08:46:37 madvise(0x7b2ce6c0000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x7b2ce700000, 258048) = 0
+13    08:46:37 mprotect(0x7b2ce6c0000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b59e000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b59c000
+13    08:46:37 munmap(0xffff9b59e000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b59e000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b598000
+13    08:46:37 munmap(0xffff9b59c000, 8192) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b59c000
+13    08:46:37 munmap(0xffff9b59e000, 4096) = 0
+13    08:46:37 munmap(0xffff9b59c000, 8192) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b591000
+13    08:46:37 munmap(0xffff9b598000, 16384) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b59a000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b599000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58f000
+13    08:46:37 munmap(0xffff9b599000, 4096) = 0
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58b000
+13    08:46:37 munmap(0xffff9b58f000, 8192) = 0
+13    08:46:37 munmap(0xffff9b58b000, 16384) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58c000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b583000
+13    08:46:37 munmap(0xffff9b59a000, 20480) = 0
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b577000
+13    08:46:37 munmap(0xffff9b58c000, 20480) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b598000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 munmap(0xffff9b598000, 28672) = 0
+13    08:46:37 munmap(0x7b2ce6fc000, 16384) = 0
+13    08:46:37 mprotect(0x7b2ce6c0000, 245760, PROT_READ) = 0
+13    08:46:37 munmap(0xffff9b591000, 28672) = 0
+13    08:46:37 munmap(0xffff9b583000, 36864) = 0
+13    08:46:37 mmap(0x27e761000000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x27e761000000
+13    08:46:37 madvise(0x27e761000000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x27e761040000, 258048) = 0
+13    08:46:37 mprotect(0x27e761000000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(0x3ec315e00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3ec315e00000
+13    08:46:37 madvise(0x3ec315e00000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x3ec315e40000, 258048) = 0
+13    08:46:37 mprotect(0x3ec315e00000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(0xee60ef00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xee60ef00000
+13    08:46:37 madvise(0xee60ef00000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0xee60ef40000, 258048) = 0
+13    08:46:37 mprotect(0xee60ef00000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(0x2f86f3ac0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2f86f3ac0000
+13    08:46:37 madvise(0x2f86f3ac0000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x2f86f3b00000, 258048) = 0
+13    08:46:37 mprotect(0x2f86f3ac0000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b598000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b596000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b591000
+13    08:46:37 mmap(0x39a9b0bc0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x39a9b0bc0000
+13    08:46:37 madvise(0x39a9b0bc0000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x39a9b0c00000, 258048) = 0
+13    08:46:37 mprotect(0x39a9b0bc0000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 brk(0xaaaae8cbb000)      = 0xaaaae8cbb000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b590000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58f000
+13    08:46:37 munmap(0xffff9b590000, 4096) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58d000
+13    08:46:37 munmap(0xffff9b58f000, 4096) = 0
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b589000
+13    08:46:37 munmap(0xffff9b58d000, 8192) = 0
+13    08:46:37 munmap(0xffff9b589000, 16384) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58a000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b585000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b580000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b56e000
+13    08:46:37 munmap(0xffff9b585000, 20480) = 0
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b565000
+13    08:46:37 munmap(0xffff9b580000, 20480) = 0
+13    08:46:37 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b554000
+13    08:46:37 munmap(0xffff8b56e000, 36864) = 0
+13    08:46:37 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b543000
+13    08:46:37 munmap(0xffff8b565000, 36864) = 0
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b581000
+13    08:46:37 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b566000
+13    08:46:37 mmap(NULL, 131116, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b522000
+13    08:46:37 munmap(0xffff9b58a000, 28672) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b590000
+13    08:46:37 mmap(0x2bf265c00000, 528384, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2bf265c00000
+13    08:46:37 madvise(0x2bf265c00000, 528384, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x2bf265c42000, 258048) = 0
+13    08:46:37 mprotect(0x2bf265c00000, 270336, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b51a000
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58e000
+13    08:46:37 munmap(0xffff9b590000, 4096) = 0
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58a000
+13    08:46:37 munmap(0xffff9b58e000, 8192) = 0
+13    08:46:37 munmap(0xffff9b58a000, 16384) = 0
+13    08:46:37 mmap(0x26ac7a00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x26ac7a00000
+13    08:46:37 madvise(0x26ac7a00000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x26ac7a40000, 258048) = 0
+13    08:46:37 mprotect(0x26ac7a00000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58c000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b511000
+13    08:46:37 munmap(0xffff9b58c000, 20480) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58a000
+13    08:46:37 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b500000
+13    08:46:37 munmap(0xffff8b511000, 36864) = 0
+13    08:46:37 mmap(0x8808c0c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x8808c0c0000
+13    08:46:37 madvise(0x8808c0c0000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x8808c100000, 258048) = 0
+13    08:46:37 mprotect(0x8808c0c0000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b580000
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b513000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b565000
+13    08:46:37 munmap(0xffff8b565000, 4096) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b511000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fc000
+13    08:46:37 munmap(0xffff8b511000, 8192) = 0
+13    08:46:37 munmap(0xffff8b4fc000, 16384) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fb000
+13    08:46:37 mmap(NULL, 131092, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4da000
+13    08:46:37 munmap(0xffff8b500000, 69632) = 0
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b50a000
+13    08:46:37 munmap(0xffff8b4fb000, 20480) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 mmap(0x2b76a2e00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2b76a2e00000
+13    08:46:37 madvise(0x2b76a2e00000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x2b76a2e40000, 258048) = 0
+13    08:46:37 mprotect(0x2b76a2e00000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4c9000
+13    08:46:37 munmap(0xffff8b50a000, 36864) = 0
+13    08:46:37 munmap(0xffff8b503000, 28672) = 0
+13    08:46:37 munmap(0xffff8b513000, 28672) = 0
+13    08:46:37 munmap(0xffff9b58a000, 28672) = 0
+13    08:46:37 munmap(0xffff8b4da000, 135168) = 0
+13    08:46:37 munmap(0xffff8b543000, 69632) = 0
+13    08:46:37 munmap(0x2b76a2e09000, 225280) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b590000
+13    08:46:37 munmap(0xffff9b590000, 4096) = 0
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58f000
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58b000
+13    08:46:37 gettid()                 = 13
+13    08:46:37 gettid()                 = 13
+13    08:46:37 gettid()                 = 13
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58a000
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b54c000
+13    08:46:37 readlinkat(AT_FDCWD, "/proc/self/exe", "/usr/local/bin/node", 8191) = 19
+13    08:46:37 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b54a000
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b512000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 mmap(0x20bc26140000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x20bc26140000
+13    08:46:37 madvise(0x20bc26140000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x20bc26180000, 258048) = 0
+13    08:46:37 mprotect(0x20bc26140000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b565000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b549000
+13    08:46:37 munmap(0xffff8b565000, 4096) = 0
+13    08:46:37 munmap(0xffff8b549000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b545000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b565000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b509000
+13    08:46:37 munmap(0xffff8b545000, 20480) = 0
+13    08:46:37 munmap(0xffff8b565000, 4096) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b543000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b565000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b565000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b565000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fa000
+13    08:46:37 munmap(0xffff8b504000, 20480) = 0
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b508000
+13    08:46:37 mmap(0x10c118e00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x10c118e00000
+13    08:46:37 madvise(0x10c118e00000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x10c118e40000, 258048) = 0
+13    08:46:37 mprotect(0x10c118e00000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f3000
+13    08:46:37 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4e2000
+13    08:46:37 munmap(0xffff8b4fa000, 36864) = 0
+13    08:46:37 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4b8000
+13    08:46:37 munmap(0xffff8b509000, 36864) = 0
+13    08:46:37 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b50e000
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b501000
+13    08:46:37 mmap(0x17cc982c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x17cc982c0000
+13    08:46:37 madvise(0x17cc982c0000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x17cc98300000, 258048) = 0
+13    08:46:37 mprotect(0x17cc982c0000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 131092, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b497000
+13    08:46:37 munmap(0xffff8b4e2000, 69632) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fa000
+13    08:46:37 munmap(0xffff8b50e000, 16384) = 0
+13    08:46:37 mmap(0x1fd8d77c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1fd8d77c0000
+13    08:46:37 madvise(0x1fd8d77c0000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x1fd8d7800000, 258048) = 0
+13    08:46:37 mprotect(0x1fd8d77c0000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b50d000
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ec000
+13    08:46:37 mmap(0x108d67b80000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x108d67b80000
+13    08:46:37 madvise(0x108d67b80000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x108d67bc0000, 258048) = 0
+13    08:46:37 mprotect(0x108d67b80000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4e5000
+13    08:46:37 mmap(0x15900d140000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x15900d140000
+13    08:46:37 madvise(0x15900d140000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x15900d180000, 258048) = 0
+13    08:46:37 mprotect(0x15900d140000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 munmap(0xffff8b50d000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4b8000, 69632) = 0
+13    08:46:37 munmap(0xffff8b497000, 135168) = 0
+13    08:46:37 munmap(0xffff8b508000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ec000, 28672) = 0
+13    08:46:37 munmap(0xffff8b4fa000, 28672) = 0
+13    08:46:37 munmap(0xffff8b501000, 28672) = 0
+13    08:46:37 munmap(0xffff8b4f3000, 28672) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b511000
+13    08:46:37 munmap(0xffff8b511000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b511000
+13    08:46:37 getpid()                 = 13
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [USR1], 8) = 0
+13    08:46:37 mmap(NULL, 45056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b506000
+13    08:46:37 mprotect(0xffff8b508000, 36864, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], ~[KILL STOP RTMIN RT_1 RT_2], 8) = 0
+13    08:46:37 clone(child_stack=0xffff8b5109a0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[19], tls=0xffff8b510aa0, child_tidptr=0xffff9e2ace80) = 19
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+19    08:46:37 rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1 RT_2],  <unfinished ...>
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [USR1],  <unfinished ...>
+19    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+13    08:46:37 <... rt_sigprocmask resumed>NULL, 8) = 0
+19    08:46:37 futex(0xaaaae5db0ec0, FUTEX_WAIT_PRIVATE, 2147483648, NULL <unfinished ...>
+13    08:46:37 rt_sigaction(SIGUSR1, {sa_handler=0xaaaae160e30c, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 rt_sigprocmask(SIG_UNBLOCK, [USR1], NULL, 8) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fa000
+13    08:46:37 munmap(0xffff8b4fa000, 20480) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 getcwd("/workspace", 4096) = 11
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mprotect(0xffff8b580000, 8192, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mprotect(0xffff8b582000, 4096, PROT_NONE) = 0
+13    08:46:37 madvise(0xffff8b582000, 4096, MADV_DONTNEED) = 0
+13    08:46:37 mprotect(0xffff8b583000, 245760, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+13    08:46:37 mprotect(0xffff8b5bf000, 4096, PROT_NONE) = 0
+13    08:46:37 madvise(0xffff8b5bf000, 4096, MADV_DONTNEED) = 0
+13    08:46:37 mprotect(0xffff8b583000, 245760, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fa000
+13    08:46:37 munmap(0xffff8b4fa000, 20480) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ff000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fa000
+13    08:46:37 munmap(0xffff8b4fa000, 20480) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4ff000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 getpid()                 = 13
+13    08:46:37 capget({version=_LINUX_CAPABILITY_VERSION_3, pid=13}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+13    08:46:37 getuid()                 = 0
+13    08:46:37 geteuid()                = 0
+13    08:46:37 getgid()                 = 0
+13    08:46:37 getegid()                = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b505000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b505000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b500000
+13    08:46:37 munmap(0xffff8b500000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f9000
+13    08:46:37 munmap(0xffff8b4f9000, 20480) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 statx(AT_FDCWD, "/workspace/04-idle-prepare/040-idleprepare.js", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1297, ...}) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f5000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f0000
+13    08:46:37 munmap(0xffff8b4f0000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4f5000, 36864) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 statx(AT_FDCWD, "/workspace", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0755, stx_size=1376, ...}) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 statx(AT_FDCWD, "/workspace/04-idle-prepare", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=224, ...}) = 0
+13    08:46:37 statx(AT_FDCWD, "/workspace/04-idle-prepare/040-idleprepare.js", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1297, ...}) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f9000
+13    08:46:37 munmap(0xffff8b4f9000, 20480) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 openat(AT_FDCWD, "/workspace/04-idle-prepare/package.json", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/workspace/package.json", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/package.json", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f9000
+13    08:46:37 munmap(0xffff8b4f9000, 20480) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f5000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f0000
+13    08:46:37 munmap(0xffff8b4f0000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4f5000, 36864) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f9000
+13    08:46:37 munmap(0xffff8b4f9000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 openat(AT_FDCWD, "/workspace/04-idle-prepare/040-idleprepare.js", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 17
+13    08:46:37 fcntl(17, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 read(17, "//we run this code with this com"..., 8192) = 1297
+13    08:46:37 read(17, "", 8192)       = 0
+13    08:46:37 close(17)                = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fe000
+13    08:46:37 munmap(0xffff8b4fe000, 20480) = 0
+13    08:46:37 mmap(0x4344be00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4344be00000
+13    08:46:37 madvise(0x4344be00000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x4344be40000, 258048) = 0
+13    08:46:37 mprotect(0x4344be00000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b502000
+13    08:46:37 munmap(0xffff8b502000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b502000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f8000
+13    08:46:37 munmap(0xffff8b4f8000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f8000
+13    08:46:37 munmap(0xffff8b4f8000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 munmap(0xffff8b503000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b503000
+13    08:46:37 openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_LARGEFILE) = 17
+13    08:46:37 lseek(17, 0, SEEK_END)   = 221
+13    08:46:37 lseek(17, 0, SEEK_CUR)   = 221
+13    08:46:37 lseek(17, 0, SEEK_SET)   = 0
+13    08:46:37 readv(17, [{iov_base="# Generated by Docker Engine.\n# "..., iov_len=220}, {iov_base="\n", iov_len=1024}], 2) = 221
+13    08:46:37 close(17)                = 0
+13    08:46:37 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_LARGEFILE) = 17
+13    08:46:37 lseek(17, 0, SEEK_END)   = 205
+13    08:46:37 lseek(17, 0, SEEK_CUR)   = 205
+13    08:46:37 lseek(17, 0, SEEK_SET)   = 0
+13    08:46:37 readv(17, [{iov_base="# musl itself does not support N"..., iov_len=204}, {iov_base="\n", iov_len=1024}], 2) = 205
+13    08:46:37 close(17)                = 0
+13    08:46:37 openat(AT_FDCWD, "/etc/netsvc.conf", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+13    08:46:37 openat(AT_FDCWD, "/etc/svc.conf", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+13    08:46:37 getrandom("\x50\x4a\xd0\xb8\xa8\x71\x5a\x25\x3d\x9e\x8c\x4a\x92\xa7\x98\x93\x06\xd8\x9b\x79\x7c\x35\x25\x56\x68\x91\xd4\x4b\x5e\x01\x13\x8f"..., 256, 0) = 256
+13    08:46:37 uname({sysname="Linux", nodename="3dc002791a59", ...}) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:37 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 36864) = 0
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fa000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f5000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ec000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4dc000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4c0000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4b7000
+13    08:46:37 munmap(0xffff8b4fa000, 32768) = 0
+13    08:46:37 munmap(0xffff8b4b7000, 36864) = 0
+13    08:46:37 munmap(0xffff8b4c0000, 36864) = 0
+13    08:46:37 munmap(0xffff8b4dc000, 36864) = 0
+13    08:46:37 munmap(0xffff8b4ec000, 36864) = 0
+13    08:46:37 munmap(0xffff8b4f5000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 ioctl(1, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b501000
+13    08:46:37 munmap(0xffff8b501000, 4096) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:37 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 36864) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fd000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f8000
+13    08:46:37 munmap(0xffff8b4f8000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4fd000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b501000
+13    08:46:37 ioctl(1, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 fcntl(1, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:46:37 ioctl(1, TIOCGPTN, 0xffffefbd2694) = -1 ENOTTY (Not a tty)
+13    08:46:37 ioctl(1, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 readlinkat(AT_FDCWD, "/proc/self/fd/1", "/dev/pts/0", 256) = 10
+13    08:46:37 newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+13    08:46:37 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:46:37 openat(AT_FDCWD, "/dev/pts/0", O_RDWR|O_NOCTTY|O_LARGEFILE|O_CLOEXEC) = 17
+13    08:46:37 fcntl(17, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 dup3(17, 1, O_CLOEXEC)   = 1
+13    08:46:37 openat(AT_FDCWD, "/dev/null", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 18
+13    08:46:37 fcntl(18, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 ioctl(17, FIONBIO, [1])  = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fc000
+13    08:46:37 munmap(0xffff8b4fc000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fc000
+13    08:46:37 munmap(0xffff8b4fc000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4fc000
+13    08:46:37 munmap(0xffff8b4fc000, 20480) = 0
+13    08:46:37 mmap(0x371f15080000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x371f15080000
+13    08:46:37 madvise(0x371f15080000, 520192, MADV_DONTFORK) = 0
+13    08:46:37 munmap(0x371f150c0000, 258048) = 0
+13    08:46:37 mprotect(0x371f15080000, 262144, PROT_READ|PROT_WRITE) = 0
+13    08:46:37 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f9000
+13    08:46:37 ioctl(17, FIONBIO, [0])  = 0
+13    08:46:37 ioctl(17, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:46:37 read(4, "*", 1)          = 1
+13    08:46:37 rt_sigaction(SIGWINCH, {sa_handler=0xaaaae2147c00, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:46:37 write(5, "*", 1)         = 1
+13    08:46:37 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:46:37 ioctl(2, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 ioctl(2, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 fcntl(2, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:46:37 ioctl(2, TIOCGPTN, 0xffffefbd2504) = -1 ENOTTY (Not a tty)
+13    08:46:37 ioctl(2, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 readlinkat(AT_FDCWD, "/proc/self/fd/2", "/dev/pts/0", 256) = 10
+13    08:46:37 newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+13    08:46:37 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:46:37 openat(AT_FDCWD, "/dev/pts/0", O_RDWR|O_NOCTTY|O_LARGEFILE|O_CLOEXEC) = 19
+13    08:46:37 fcntl(19, F_SETFD, FD_CLOEXEC) = 0
+13    08:46:37 dup3(19, 2, O_CLOEXEC)   = 2
+13    08:46:37 ioctl(19, FIONBIO, [1])  = 0
+13    08:46:37 ioctl(19, FIONBIO, [0])  = 0
+13    08:46:37 ioctl(19, TIOCGWINSZ, {ws_row=28, ws_col=94, ws_xpixel=0, ws_ypixel=0}) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:37 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4dc000
+13    08:46:37 munmap(0xffff8b4dc000, 36864) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4dc000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:37 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4dc000, 36864) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b504000, 4096) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:37 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 write(17, "start\n", 6)  = 6
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:37 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 write(17, "end\n", 4)    = 4
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:37 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 20
+13    08:46:37 setsockopt(20, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+13    08:46:37 bind(20, {sa_family=AF_INET, sin_port=htons(3000), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+13    08:46:37 listen(20, 511)          = 0
+13    08:46:37 write(17, "Server listening on port 3000\n", 30) = 30
+13    08:46:37 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:37 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 14, {events=EPOLLIN, data=0xe}) = 0
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 16, {events=EPOLLIN, data=0x10}) = 0
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 20, {events=EPOLLIN, data=0x14}) = 0
+13    08:46:37 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:46:37 epoll_pwait(13, [{events=EPOLLIN, data=0x14}], 1024, 29985, NULL, 8) = 1
+13    08:46:47 accept4(20, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = 21
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:47 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:47 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:47 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:47 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:47 write(17, "Client connected\n", 17) = 17
+13    08:46:47 munmap(0xffff8b504000, 4096) = 0
+13    08:46:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b504000
+13    08:46:47 epoll_ctl(13, EPOLL_CTL_ADD, 21, {events=EPOLLIN, data=0x15}) = 0
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:47 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4b8000
+13    08:46:47 read(21, "Hello from client!\n", 65536) = 19
+13    08:46:47 munmap(0xffff8b4b8000, 69632) = 0
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:47 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:47 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:47 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:47 write(17, "Received data: Hello from client"..., 35) = 35
+13    08:46:47 write(21, "Echo: Hello from client!\n", 25) = 25
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:47 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4b8000
+13    08:46:47 read(21, "", 65536)      = 0
+13    08:46:47 write(17, "Client disconnected\n", 20) = 20
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:47 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:47 munmap(0xffff8b4b8000, 69632) = 0
+13    08:46:47 shutdown(21, SHUT_WR)    = 0
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:46:47 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:46:47 munmap(0xffff8b4ef000, 20480) = 0
+13    08:46:47 munmap(0xffff8b4f4000, 20480) = 0
+13    08:46:47 epoll_ctl(13, EPOLL_CTL_DEL, 21, 0xffffefbd53f8) = 0
+13    08:46:47 close(21)                = 0
+13    08:46:47 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x14}], 1024, 20538, NULL, 8) = 1
+13    08:46:49 accept4(20, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = 21
+13    08:46:49 write(17, "Client connected\n", 17) = 17
+13    08:46:49 epoll_ctl(13, EPOLL_CTL_ADD, 21, {events=EPOLLIN, data=0x15}) = 0
+13    08:46:49 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:49 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4b8000
+13    08:46:49 read(21, "Hello from client!\n", 65536) = 19
+13    08:46:49 munmap(0xffff8b4b8000, 69632) = 0
+13    08:46:49 write(17, "Received data: Hello from client"..., 35) = 35
+13    08:46:49 write(21, "Echo: Hello from client!\n", 25) = 25
+13    08:46:49 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:49 mmap(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4b8000
+13    08:46:49 read(21, "", 65536)      = 0
+13    08:46:49 write(17, "Client disconnected\n", 20) = 20
+13    08:46:49 munmap(0xffff8b4b8000, 69632) = 0
+13    08:46:49 shutdown(21, SHUT_WR)    = 0
+13    08:46:49 epoll_ctl(13, EPOLL_CTL_DEL, 21, 0xffffefbd53f8) = 0
+13    08:46:49 close(21)                = 0
+13    08:46:49 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:46:49 epoll_pwait(13, [], 1024, 18133, NULL, 8) = 0
+13    08:47:07 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f7000
+13    08:47:07 munmap(0xffff8b4f7000, 8192) = 0
+13    08:47:07 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:47:07 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4ef000
+13    08:47:07 munmap(0xffff8b4ef000, 20480) = 0
+13    08:47:07 munmap(0xffff8b4f4000, 20480) = 0
+13    08:47:07 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f7000
+13    08:47:07 munmap(0xffff8b4f7000, 8192) = 0
+13    08:47:07 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f7000
+13    08:47:07 munmap(0xffff8b4f7000, 8192) = 0
+13    08:47:07 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f4000
+13    08:47:07 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f2000
+13    08:47:07 munmap(0xffff8b4f2000, 8192) = 0
+13    08:47:07 munmap(0xffff8b4f4000, 20480) = 0
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 20, 0xffffefbd57b8) = 0
+13    08:47:07 close(20)                = 0
+13    08:47:07 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f7000
+13    08:47:07 munmap(0xffff8b4f7000, 8192) = 0
+13    08:47:07 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f7000
+13    08:47:07 munmap(0xffff8b4f7000, 8192) = 0
+13    08:47:07 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b4f7000
+13    08:47:07 munmap(0xffff8b4f7000, 8192) = 0
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 17, 0xffffefbd6008) = -1 ENOENT (No such file or directory)
+13    08:47:07 close(17)                = 0
+13    08:47:07 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:47:07 read(4, "*", 1)          = 1
+13    08:47:07 rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:47:07 write(5, "*", 1)         = 1
+13    08:47:07 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 19, 0xffffefbd6008) = -1 ENOENT (No such file or directory)
+13    08:47:07 close(19)                = 0
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:47:07 munmap(0xffff8b511000, 4096) = 0
+13    08:47:07 munmap(0xffff8b54a000, 8192) = 0
+13    08:47:07 munmap(0xffff9b58a000, 4096) = 0
+13    08:47:07 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff9b58a000
+13    08:47:07 munmap(0xffff9b58a000, 4096) = 0
+13    08:47:07 munmap(0xffff9b58b000, 16384) = 0
+13    08:47:07 munmap(0xffff9b591000, 20480) = 0
+13    08:47:07 munmap(0xffff9b581000, 36864) = 0
+13    08:47:07 munmap(0xffff8b566000, 69632) = 0
+13    08:47:07 munmap(0xffff8b522000, 135168) = 0
+13    08:47:07 munmap(0xffff8b543000, 28672) = 0
+13    08:47:07 munmap(0xffff9b596000, 8192) = 0
+13    08:47:07 munmap(0x39a9b0bc0000, 262144) = 0
+13    08:47:07 munmap(0x26ac7a00000, 262144) = 0
+13    08:47:07 munmap(0x8808c0c0000, 262144) = 0
+13    08:47:07 munmap(0x2b76a2e00000, 36864) = 0
+13    08:47:07 munmap(0x20bc26140000, 262144) = 0
+13    08:47:07 munmap(0x10c118e00000, 262144) = 0
+13    08:47:07 munmap(0x17cc982c0000, 262144) = 0
+13    08:47:07 munmap(0x1fd8d77c0000, 262144) = 0
+13    08:47:07 munmap(0x108d67b80000, 262144) = 0
+13    08:47:07 munmap(0xffff8b565000, 4096) = 0
+13    08:47:07 munmap(0x15900d140000, 262144) = 0
+13    08:47:07 munmap(0xffff8b502000, 4096) = 0
+13    08:47:07 munmap(0x4344be00000, 262144) = 0
+13    08:47:07 munmap(0xffff8b505000, 4096) = 0
+13    08:47:07 munmap(0xffff8b4f9000, 32768) = 0
+13    08:47:07 munmap(0x371f15080000, 262144) = 0
+13    08:47:07 munmap(0xffff8b504000, 4096) = 0
+13    08:47:07 mprotect(0xffff8b580000, 262144, PROT_NONE) = 0
+13    08:47:07 madvise(0xffff8b580000, 262144, MADV_DONTNEED) = 0
+13    08:47:07 munmap(0x2bf265c00000, 270336) = 0
+13    08:47:07 mprotect(0x2f86f3ac0000, 262144, PROT_NONE) = 0
+13    08:47:07 madvise(0x2f86f3ac0000, 262144, MADV_DONTNEED) = 0
+13    08:47:07 mprotect(0xee60ef00000, 262144, PROT_NONE) = 0
+13    08:47:07 madvise(0xee60ef00000, 262144, MADV_DONTNEED) = 0
+13    08:47:07 mprotect(0x3ec315e00000, 262144, PROT_NONE) = 0
+13    08:47:07 madvise(0x3ec315e00000, 262144, MADV_DONTNEED) = 0
+13    08:47:07 mprotect(0x27e761000000, 262144, PROT_NONE) = 0
+13    08:47:07 madvise(0x27e761000000, 262144, MADV_DONTNEED) = 0
+13    08:47:07 munmap(0x27e761000000, 262144) = 0
+13    08:47:07 munmap(0x3ec315e00000, 262144) = 0
+13    08:47:07 munmap(0xee60ef00000, 262144) = 0
+13    08:47:07 munmap(0x2f86f3ac0000, 262144) = 0
+13    08:47:07 munmap(0xffff9b5a1000, 61440) = 0
+13    08:47:07 munmap(0xffff9b5b1000, 8192) = 0
+13    08:47:07 munmap(0xffff9b598000, 28672) = 0
+13    08:47:07 munmap(0xffff9b5c3000, 65536) = 0
+13    08:47:07 munmap(0xffff9b5b3000, 65536) = 0
+13    08:47:07 munmap(0xffff8b501000, 4096) = 0
+13    08:47:07 munmap(0xffff8b4e5000, 28672) = 0
+13    08:47:07 munmap(0xffff9b58f000, 8192) = 0
+13    08:47:07 munmap(0xffff8b554000, 69632) = 0
+13    08:47:07 munmap(0xffff8b4c9000, 69632) = 0
+13    08:47:07 munmap(0xffff9b5d5000, 4096) = 0
+13    08:47:07 munmap(0xffff9b5db000, 32768) = 0
+13    08:47:07 munmap(0x7b2ce6c0000, 245760) = 0
+13    08:47:07 munmap(0xffff8b577000, 36864) = 0
+13    08:47:07 munmap(0xffff9b59f000, 8192) = 0
+13    08:47:07 munmap(0xffff9b580000, 4096) = 0
+13    08:47:07 munmap(0xffff8b580000, 268435456) = 0
+13    08:47:07 munmap(0xffff9b5e3000, 65536) = 0
+13    08:47:07 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:47:07 fcntl(0, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:47:07 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+13    08:47:07 ioctl(0, TCSETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:47:07 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+13    08:47:07 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:47:07 fcntl(1, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:47:07 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+13    08:47:07 ioctl(1, TCSETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:47:07 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+13    08:47:07 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:47:07 fcntl(2, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:47:07 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+13    08:47:07 ioctl(2, TCSETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:47:07 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+13    08:47:07 rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGINT, NULL, {sa_handler=0xaaaae1477e44, sa_mask=~[KILL STOP RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESETHAND, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:47:07 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:47:07 rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:47:07 rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+13    08:47:07 rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:07 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGUSR1, NULL, {sa_handler=0xaaaae160e30c, sa_mask=~[KILL STOP RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:47:07 rt_sigaction(SIGSEGV, NULL, {sa_handler=0xaaaae1477f00, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:47:07 rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:47:07 rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGTERM, NULL, {sa_handler=0xaaaae1477e44, sa_mask=~[KILL STOP RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESETHAND, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:47:07 rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, NULL, 8) = 0
+13    08:47:07 rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9e23bb14}, 8) = 0
+13    08:47:07 rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+13    08:47:07 futex(0xffff9be778e4, FUTEX_WAKE_PRIVATE, 1) = 1
+18    08:47:07 <... futex resumed>)     = 0
+13    08:47:07 write(12, "\1\0\0\0\0\0\0\0", 8) = 8
+18    08:47:07 futex(0xffff9ce7d8e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+13    08:47:07 futex(0xffff9de83a00, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+14    08:47:07 <... epoll_pwait resumed>[{events=EPOLLIN, data=0xc}], 1024, -1, NULL, 8) = 1
+18    08:47:07 <... futex resumed>)     = 1
+14    08:47:07 read(12,  <unfinished ...>
+18    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+14    08:47:07 <... read resumed>"\1\0\0\0\0\0\0\0", 1024) = 8
+18    08:47:07 <... futex resumed>)     = 1
+16    08:47:07 <... futex resumed>)     = 0
+18    08:47:07 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+14    08:47:07 close(10 <unfinished ...>
+18    08:47:07 <... rt_sigprocmask resumed>[USR1], 8) = 0
+16    08:47:07 futex(0xffff9c67a8e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+18    08:47:07 futex(0xffff9be77a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+14    08:47:07 <... close resumed>)     = 0
+18    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 <... futex resumed>)     = 1
+18    08:47:07 exit(0 <unfinished ...>
+14    08:47:07 close(11 <unfinished ...>
+18    08:47:07 <... exit resumed>)      = ?
+16    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:47:07 +++ exited with 0 +++
+14    08:47:07 <... close resumed>)     = 0
+17    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 <... futex resumed>)     = 1
+17    08:47:07 futex(0xffff9d6808e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+14    08:47:07 close(12 <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 1
+16    08:47:07 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+17    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+14    08:47:07 <... close resumed>)     = 0
+17    08:47:07 <... futex resumed>)     = 1
+16    08:47:07 <... rt_sigprocmask resumed>[USR1], 8) = 0
+15    08:47:07 <... futex resumed>)     = 0
+17    08:47:07 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+16    08:47:07 futex(0xffff9ce7da00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+14    08:47:07 close(9 <unfinished ...>
+17    08:47:07 <... rt_sigprocmask resumed>[USR1], 8) = 0
+16    08:47:07 <... futex resumed>)     = 0
+15    08:47:07 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+14    08:47:07 <... close resumed>)     = 0
+17    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 16, NULL <unfinished ...>
+16    08:47:07 exit(0 <unfinished ...>
+15    08:47:07 <... rt_sigprocmask resumed>[USR1], 8) = 0
+16    08:47:07 <... exit resumed>)      = ?
+14    08:47:07 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 +++ exited with 0 +++
+15    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 16, NULL <unfinished ...>
+14    08:47:07 <... rt_sigprocmask resumed>[USR1], 8) = 0
+17    08:47:07 futex(0xffff9c67aa00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+15    08:47:07 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+17    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 17, NULL <unfinished ...>
+17    08:47:07 exit(0 <unfinished ...>
+15    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 17, NULL <unfinished ...>
+17    08:47:07 <... exit resumed>)      = ?
+17    08:47:07 +++ exited with 0 +++
+14    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 futex(0xffff9de83a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 <... futex resumed>)     = 1
+13    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 14, NULL <unfinished ...>
+14    08:47:07 exit(0)                  = ?
+15    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 +++ exited with 0 +++
+15    08:47:07 futex(0xffff9d680a00, FUTEX_WAKE_PRIVATE, 1) = 0
+15    08:47:07 exit(0)                  = ?
+13    08:47:07 <... futex resumed>)     = 0
+15    08:47:07 +++ exited with 0 +++
+13    08:47:07 munmap(0xffff9d681000, 8400896) = 0
+13    08:47:08 munmap(0xffff9ce7e000, 8400896) = 0
+13    08:47:08 munmap(0xffff9c67b000, 8400896) = 0
+13    08:47:08 munmap(0xffff9be78000, 8400896) = 0
+13    08:47:08 munmap(0xffff9b675000, 8400896) = 0
+13    08:47:08 epoll_ctl(3, EPOLL_CTL_ADD, 6, {events=EPOLLIN, data=0x6}) = 0
+13    08:47:08 epoll_ctl(3, EPOLL_CTL_ADD, 8, {events=EPOLLIN, data=0x8}) = 0
+13    08:47:08 epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+13    08:47:08 close(6)                 = 0
+13    08:47:08 close(7)                 = 0
+13    08:47:08 close(8)                 = 0
+13    08:47:08 close(3)                 = 0
+13    08:47:08 munmap(0xffff9de84000, 4096) = 0
+13    08:47:08 munmap(0xffff9b5d6000, 20480) = 0
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:08 munmap(0xffff8b512000, 32768) = 0
+13    08:47:08 munmap(0xffff8b51a000, 32768) = 0
+13    08:47:08 munmap(0xffff9de9c000, 4096) = 0
+13    08:47:08 munmap(0xffff9de96000, 4096) = 0
+13    08:47:08 munmap(0xffff9de8b000, 4096) = 0
+13    08:47:08 munmap(0xffff9de89000, 4096) = 0
+13    08:47:08 munmap(0xffff9de9d000, 4096) = 0
+13    08:47:08 munmap(0xffff9de9f000, 16384) = 0
+13    08:47:08 munmap(0xffff9decb000, 4096) = 0
+13    08:47:08 munmap(0xffff9dea3000, 16384) = 0
+13    08:47:08 munmap(0xffff9de9e000, 4096) = 0
+13    08:47:08 munmap(0xffff9de9b000, 4096) = 0
+13    08:47:08 munmap(0xffff9de95000, 4096) = 0
+13    08:47:08 munmap(0xffff9de8c000, 4096) = 0
+13    08:47:08 munmap(0xffff9dec6000, 4096) = 0
+13    08:47:08 munmap(0xffff9de88000, 4096) = 0
+13    08:47:08 munmap(0xffff9de8a000, 4096) = 0
+13    08:47:08 munmap(0xffff9dec7000, 8192) = 0
+13    08:47:08 munmap(0xffff9dec9000, 8192) = 0
+13    08:47:08 munmap(0xffff9dea7000, 32768) = 0
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:08 munmap(0xffff9deaf000, 32768) = 0
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+13    08:47:08 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+13    08:47:08 munmap(0xffff9debe000, 32768) = 0
+13    08:47:08 munmap(0xffff9deb7000, 28672) = 0
+13    08:47:08 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:47:08 fcntl(0, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+13    08:47:08 ioctl(0, TCSETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:47:08 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+13    08:47:08 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:47:08 fcntl(1, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+13    08:47:08 ioctl(1, TCSETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:47:08 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+13    08:47:08 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+13    08:47:08 fcntl(2, F_GETFL)        = 0x20002 (flags O_RDWR|O_LARGEFILE)
+13    08:47:08 rt_sigprocmask(SIG_BLOCK, [TTOU], NULL, 8) = 0
+13    08:47:08 ioctl(2, TCSETS, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+13    08:47:08 rt_sigprocmask(SIG_UNBLOCK, [TTOU], NULL, 8) = 0
+13    08:47:08 munmap(0xffff9ded1000, 24576) = 0
+13    08:47:08 munmap(0xffff9ded7000, 8192) = 0
+13    08:47:08 munmap(0xffff9ded9000, 4096) = 0
+13    08:47:08 munmap(0xffff9dee2000, 8192) = 0
+13    08:47:08 munmap(0xffff9dede000, 16384) = 0
+13    08:47:08 munmap(0xffff9dee4000, 8192) = 0
+13    08:47:08 munmap(0xffff9dee7000, 16384) = 0
+13    08:47:08 munmap(0xffff9deef000, 4096) = 0
+13    08:47:08 munmap(0xffff9def0000, 4096) = 0
+13    08:47:08 munmap(0xffff9defc000, 4096) = 0
+13    08:47:08 munmap(0xffff9def9000, 4096) = 0
+13    08:47:08 munmap(0xffff9defa000, 8192) = 0
+13    08:47:08 munmap(0xffff9def6000, 4096) = 0
+13    08:47:08 munmap(0xffff9def7000, 8192) = 0
+13    08:47:08 munmap(0xffff9def1000, 16384) = 0
+13    08:47:08 munmap(0xffff9def5000, 4096) = 0
+13    08:47:08 munmap(0xffff9defd000, 4096) = 0
+13    08:47:08 munmap(0xffff9df07000, 4096) = 0
+13    08:47:08 munmap(0xffff9df04000, 4096) = 0
+13    08:47:08 munmap(0xffff9df03000, 4096) = 0
+13    08:47:08 munmap(0xffff9df09000, 4096) = 0
+13    08:47:08 munmap(0xffff9df08000, 4096) = 0
+13    08:47:08 munmap(0xffff9df0a000, 4096) = 0
+13    08:47:08 munmap(0xffff9df0b000, 4096) = 0
+13    08:47:08 munmap(0xffff9df00000, 8192) = 0
+13    08:47:08 munmap(0xffff9df05000, 8192) = 0
+13    08:47:08 munmap(0xffff9df02000, 4096) = 0
+13    08:47:08 munmap(0xffff9defe000, 8192) = 0
+13    08:47:08 munmap(0xffff9df0c000, 4096) = 0
+13    08:47:08 munmap(0xffff9df0d000, 4096) = 0
+13    08:47:08 munmap(0xffff9df10000, 4096) = 0
+13    08:47:08 munmap(0xffff9df12000, 4096) = 0
+13    08:47:08 munmap(0xffff9df11000, 4096) = 0
+13    08:47:08 munmap(0xffff9e28f000, 4096) = 0
+13    08:47:08 munmap(0xffff9e28e000, 4096) = 0
+13    08:47:08 munmap(0xffff9e28d000, 4096) = 0
+13    08:47:08 munmap(0xffff9df13000, 4096) = 0
+13    08:47:08 munmap(0xffff9e28c000, 4096) = 0
+13    08:47:08 munmap(0xffff9e290000, 4096) = 0
+13    08:47:08 munmap(0xffff9e291000, 4096) = 0
+13    08:47:08 munmap(0xffff9e292000, 4096) = 0
+13    08:47:08 close(4)                 = 0
+13    08:47:08 close(5)                 = 0
+13    08:47:08 exit_group(0)            = ?
+19    08:47:08 <... futex resumed>)     = ?
+19    08:47:08 +++ exited with 0 +++
+13    08:47:08 +++ exited with 0 +++

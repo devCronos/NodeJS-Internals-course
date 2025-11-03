@@ -1,0 +1,198 @@
+13    08:46:37 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+13    08:46:37 close(3)                 = 0
+13    08:46:37 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+13    08:46:37 close(3)                 = 0
+13    08:46:37 read(3, "#\n# OpenSSL example configuratio"..., 1024) = 1024
+13    08:46:37 read(3, "and 'ts'.\n# Add a simple OID lik"..., 1024) = 1024
+13    08:46:37 read(3, "r provider(s), you most\n# probab"..., 1024) = 1024
+13    08:46:37 read(3, "umber\t= $dir/crlnumber\t# the cur"..., 1024) = 1024
+13    08:46:37 read(3, "d attributes must be the same, a"..., 1024) = 1024
+13    08:46:37 read(3, "ets a mask for permitted string "..., 1024) = 1024
+13    08:46:37 read(3, " (eg, company)\n#1.organizationNa"..., 1024) = 1024
+13    08:46:37 read(3, "tAltName and issuerAltname.\n# Im"..., 1024) = 1024
+13    08:46:37 read(3, "coding of an extension: beware e"..., 1024) = 1024
+13    08:46:37 read(3, "ficates that aren't\n# deprecated"..., 1024) = 1024
+13    08:46:37 read(3, "r_policies\t= tsa_policy2, tsa_po"..., 1024) = 1024
+13    08:46:37 read(3, "italsignature\nunprotected_errors"..., 1024) = 1024
+13    08:46:37 read(3, "cert = $insta::certout # insta.c"..., 1024) = 123
+13    08:46:37 read(3, "", 1024)        = 0
+13    08:46:37 close(3)                 = 0
+13    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 3
+13    08:46:37 pipe2([4, 5], O_CLOEXEC) = 0
+13    08:46:37 write(5, "*", 1)         = 1
+13    08:46:37 pipe2([6, 7], O_NONBLOCK|O_CLOEXEC) = 0
+13    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 8
+13    08:46:37 futex(0xffff9de84550, FUTEX_WAIT_PRIVATE, 2147483648, NULL <unfinished ...>
+14    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 9
+14    08:46:37 pipe2([10, 11], O_NONBLOCK|O_CLOEXEC) = 0
+14    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 12
+14    08:46:37 futex(0xffff9de84550, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = 0
+14    08:46:37 <... futex resumed>)     = 1
+14    08:46:37 epoll_ctl(9, EPOLL_CTL_ADD, 10, {events=EPOLLIN, data=0xa} <unfinished ...>
+14    08:46:37 <... epoll_ctl resumed>) = 0
+14    08:46:37 epoll_ctl(9, EPOLL_CTL_ADD, 12, {events=EPOLLIN, data=0xc} <unfinished ...>
+14    08:46:37 <... epoll_ctl resumed>) = 0
+14    08:46:37 epoll_pwait(9,  <unfinished ...>
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+16    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+17    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+18    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+13    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:46:37 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+13    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 <... futex resumed>)     = 0
+13    08:46:37 futex(0xffffefbd6184, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+18    08:46:37 futex(0xffffefbd6184, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483666, NULL <unfinished ...>
+13    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483666, NULL <unfinished ...>
+18    08:46:37 <... futex resumed>)     = 0
+18    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1) = 1
+16    08:46:37 <... futex resumed>)     = 0
+18    08:46:37 futex(0xffff9be778e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+16    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17    08:46:37 <... futex resumed>)     = 0
+16    08:46:37 <... futex resumed>)     = 1
+17    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+16    08:46:37 futex(0xffff9ce7d8e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+17    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 <... futex resumed>)     = 0
+17    08:46:37 futex(0xffff9c67a8e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = 0
+15    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 futex(0xffff9d6808e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+13    08:46:37 readv(13, [{iov_base="!\0\0\0\0\0\0", iov_len=7}, {iov_base="\0\0\200*\236\377\377\0\0003\0\0\0\0\0\0\0p\22\0\0\0\0\0\0\20\0\0\0\0\0\0"..., iov_len=1024}], 2) = 368
+13    08:46:37 close(13)                = 0
+13    08:46:37 readv(13, [{iov_base="processor\t: 0\nBogoMIPS\t: 48.00\nF"..., iov_len=255}, {iov_base="er\t: 0x61\nCPU architecture: 8\nCP"..., iov_len=1024}], 2) = 676
+13    08:46:37 readv(13, [{iov_base="", iov_len=91}, {iov_base="", iov_len=1024}], 2) = 0
+13    08:46:37 close(13)                = 0
+13    08:46:37 readv(13, [{iov_base="processor\t: 0\nBogoMIPS\t: 48.00\nF"..., iov_len=675}, {iov_base="\n", iov_len=1024}], 2) = 676
+13    08:46:37 close(13)                = 0
+13    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 13
+13    08:46:37 pipe2([14, 15], O_NONBLOCK|O_CLOEXEC) = 0
+13    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 16
+13    08:46:37 read(17, "0::/\n", 1023) = 5
+13    08:46:37 close(17)                = 0
+13    08:46:37 read(17, "max\n", 31)    = 4
+13    08:46:37 close(17)                = 0
+13    08:46:37 read(17, "max\n", 31)    = 4
+13    08:46:37 close(17)                = 0
+13    08:46:37 read(17, "MemTotal:        6066752 kB\nMemF"..., 4095) = 1392
+13    08:46:37 close(17)                = 0
+19    08:46:37 futex(0xaaaae5db0ec0, FUTEX_WAIT_PRIVATE, 2147483648, NULL <unfinished ...>
+13    08:46:37 read(17, "//we run this code with this com"..., 8192) = 1297
+13    08:46:37 read(17, "", 8192)       = 0
+13    08:46:37 close(17)                = 0
+13    08:46:37 readv(17, [{iov_base="# Generated by Docker Engine.\n# "..., iov_len=220}, {iov_base="\n", iov_len=1024}], 2) = 221
+13    08:46:37 close(17)                = 0
+13    08:46:37 readv(17, [{iov_base="# musl itself does not support N"..., iov_len=204}, {iov_base="\n", iov_len=1024}], 2) = 205
+13    08:46:37 close(17)                = 0
+13    08:46:37 read(4, "*", 1)          = 1
+13    08:46:37 write(5, "*", 1)         = 1
+13    08:46:37 write(17, "start\n", 6)  = 6
+13    08:46:37 write(17, "end\n", 4)    = 4
+13    08:46:37 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 20
+13    08:46:37 bind(20, {sa_family=AF_INET, sin_port=htons(3000), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+13    08:46:37 listen(20, 511)          = 0
+13    08:46:37 write(17, "Server listening on port 3000\n", 30) = 30
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 14, {events=EPOLLIN, data=0xe}) = 0
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 16, {events=EPOLLIN, data=0x10}) = 0
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 20, {events=EPOLLIN, data=0x14}) = 0
+13    08:46:37 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:46:37 epoll_pwait(13, [{events=EPOLLIN, data=0x14}], 1024, 29985, NULL, 8) = 1
+13    08:46:47 accept4(20, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = 21
+13    08:46:47 write(17, "Client connected\n", 17) = 17
+13    08:46:47 epoll_ctl(13, EPOLL_CTL_ADD, 21, {events=EPOLLIN, data=0x15}) = 0
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:47 read(21, "Hello from client!\n", 65536) = 19
+13    08:46:47 write(17, "Received data: Hello from client"..., 35) = 35
+13    08:46:47 write(21, "Echo: Hello from client!\n", 25) = 25
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:47 read(21, "", 65536)      = 0
+13    08:46:47 write(17, "Client disconnected\n", 20) = 20
+13    08:46:47 epoll_ctl(13, EPOLL_CTL_DEL, 21, 0xffffefbd53f8) = 0
+13    08:46:47 close(21)                = 0
+13    08:46:47 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x14}], 1024, 20538, NULL, 8) = 1
+13    08:46:49 accept4(20, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = 21
+13    08:46:49 write(17, "Client connected\n", 17) = 17
+13    08:46:49 epoll_ctl(13, EPOLL_CTL_ADD, 21, {events=EPOLLIN, data=0x15}) = 0
+13    08:46:49 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:49 read(21, "Hello from client!\n", 65536) = 19
+13    08:46:49 write(17, "Received data: Hello from client"..., 35) = 35
+13    08:46:49 write(21, "Echo: Hello from client!\n", 25) = 25
+13    08:46:49 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+13    08:46:49 read(21, "", 65536)      = 0
+13    08:46:49 write(17, "Client disconnected\n", 20) = 20
+13    08:46:49 epoll_ctl(13, EPOLL_CTL_DEL, 21, 0xffffefbd53f8) = 0
+13    08:46:49 close(21)                = 0
+13    08:46:49 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:46:49 epoll_pwait(13, [], 1024, 18133, NULL, 8) = 0
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 20, 0xffffefbd57b8) = 0
+13    08:47:07 close(20)                = 0
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 17, 0xffffefbd6008) = -1 ENOENT (No such file or directory)
+13    08:47:07 close(17)                = 0
+13    08:47:07 read(4, "*", 1)          = 1
+13    08:47:07 write(5, "*", 1)         = 1
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 19, 0xffffefbd6008) = -1 ENOENT (No such file or directory)
+13    08:47:07 close(19)                = 0
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:47:07 futex(0xffff9be778e4, FUTEX_WAKE_PRIVATE, 1) = 1
+18    08:47:07 <... futex resumed>)     = 0
+13    08:47:07 write(12, "\1\0\0\0\0\0\0\0", 8) = 8
+18    08:47:07 futex(0xffff9ce7d8e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+13    08:47:07 futex(0xffff9de83a00, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+14    08:47:07 <... epoll_pwait resumed>[{events=EPOLLIN, data=0xc}], 1024, -1, NULL, 8) = 1
+18    08:47:07 <... futex resumed>)     = 1
+14    08:47:07 read(12,  <unfinished ...>
+18    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:47:07 <... futex resumed>)     = 1
+16    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 close(10 <unfinished ...>
+16    08:47:07 futex(0xffff9c67a8e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+18    08:47:07 futex(0xffff9be77a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 <... futex resumed>)     = 1
+14    08:47:07 close(11 <unfinished ...>
+16    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 <... futex resumed>)     = 1
+17    08:47:07 futex(0xffff9d6808e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+14    08:47:07 close(12 <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 1
+17    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 1
+15    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 futex(0xffff9ce7da00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+14    08:47:07 close(9 <unfinished ...>
+16    08:47:07 <... futex resumed>)     = 0
+17    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 16, NULL <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 0
+15    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 16, NULL <unfinished ...>
+17    08:47:07 futex(0xffff9c67aa00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+15    08:47:07 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+17    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 17, NULL <unfinished ...>
+15    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 17, NULL <unfinished ...>
+14    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 futex(0xffff9de83a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 <... futex resumed>)     = 1
+13    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 14, NULL <unfinished ...>
+15    08:47:07 <... futex resumed>)     = 0
+15    08:47:07 futex(0xffff9d680a00, FUTEX_WAKE_PRIVATE, 1) = 0
+13    08:47:07 <... futex resumed>)     = 0
+13    08:47:08 epoll_ctl(3, EPOLL_CTL_ADD, 6, {events=EPOLLIN, data=0x6}) = 0
+13    08:47:08 epoll_ctl(3, EPOLL_CTL_ADD, 8, {events=EPOLLIN, data=0x8}) = 0
+13    08:47:08 epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+13    08:47:08 close(6)                 = 0
+13    08:47:08 close(7)                 = 0
+13    08:47:08 close(8)                 = 0
+13    08:47:08 close(3)                 = 0
+13    08:47:08 close(4)                 = 0
+13    08:47:08 close(5)                 = 0
+19    08:47:08 <... futex resumed>)     = ?

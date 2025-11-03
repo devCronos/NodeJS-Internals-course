@@ -4,4 +4,8 @@
 
 --event loop gets initialized after the initial phase
 
-## Timer Phase
+# Timer Phase
+
+### pending callbacks
+
+### idle, prepare

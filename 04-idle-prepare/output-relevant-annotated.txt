@@ -1,0 +1,416 @@
+# ============================================================================
+# NODE.JS EVENT LOOP - IDLE/PREPARE PHASE ANALYSIS
+# ============================================================================
+# This trace shows the system calls made by Node.js during initialization
+# and the event loop lifecycle, with focus on the idle/prepare phase
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# INITIALIZATION PHASE - Node.js startup
+# ----------------------------------------------------------------------------
+# Reading ELF binaries (shared libraries being loaded)
+13    08:46:37 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+13    08:46:37 close(3)                 = 0
+13    08:46:37 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+13    08:46:37 close(3)                 = 0
+
+# Reading OpenSSL configuration (for crypto/TLS support)
+13    08:46:37 read(3, "#\n# OpenSSL example configuratio"..., 1024) = 1024
+13    08:46:37 read(3, "and 'ts'.\n# Add a simple OID lik"..., 1024) = 1024
+13    08:46:37 read(3, "r provider(s), you most\n# probab"..., 1024) = 1024
+13    08:46:37 read(3, "umber\t= $dir/crlnumber\t# the cur"..., 1024) = 1024
+13    08:46:37 read(3, "d attributes must be the same, a"..., 1024) = 1024
+13    08:46:37 read(3, "ets a mask for permitted string "..., 1024) = 1024
+13    08:46:37 read(3, " (eg, company)\n#1.organizationNa"..., 1024) = 1024
+13    08:46:37 read(3, "tAltName and issuerAltname.\n# Im"..., 1024) = 1024
+13    08:46:37 read(3, "coding of an extension: beware e"..., 1024) = 1024
+13    08:46:37 read(3, "ficates that aren't\n# deprecated"..., 1024) = 1024
+13    08:46:37 read(3, "r_policies\t= tsa_policy2, tsa_po"..., 1024) = 1024
+13    08:46:37 read(3, "italsignature\nunprotected_errors"..., 1024) = 1024
+13    08:46:37 read(3, "cert = $insta::certout # insta.c"..., 1024) = 123
+13    08:46:37 read(3, "", 1024)        = 0
+13    08:46:37 close(3)                 = 0
+
+# ----------------------------------------------------------------------------
+# EVENT LOOP SETUP - Creating epoll instances
+# ----------------------------------------------------------------------------
+# epoll is Linux's efficient I/O event notification mechanism
+# This is the MAIN event loop epoll instance (fd=3)
+13    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 3
+
+# Creating communication pipes for internal signaling
+13    08:46:37 pipe2([4, 5], O_CLOEXEC) = 0
+13    08:46:37 write(5, "*", 1)         = 1  # Initial signal to wake up event loop
+
+# Non-blocking pipe for async operations
+13    08:46:37 pipe2([6, 7], O_NONBLOCK|O_CLOEXEC) = 0
+
+# eventfd is used for efficient event notification between threads
+13    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 8
+
+# ----------------------------------------------------------------------------
+# THREAD POOL INITIALIZATION (libuv worker threads)
+# ----------------------------------------------------------------------------
+# Node.js creates a thread pool for file I/O and other blocking operations
+# These futex calls are thread synchronization primitives
+
+13    08:46:37 futex(0xffff9de84550, FUTEX_WAIT_PRIVATE, 2147483648, NULL <unfinished ...>
+
+# Worker thread creates its own epoll instance (fd=9) for monitoring work queue
+14    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 9
+14    08:46:37 pipe2([10, 11], O_NONBLOCK|O_CLOEXEC) = 0
+14    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 12
+14    08:46:37 futex(0xffff9de84550, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = 0
+14    08:46:37 <... futex resumed>)     = 1
+
+# Adding file descriptors to worker thread's epoll for monitoring
+14    08:46:37 epoll_ctl(9, EPOLL_CTL_ADD, 10, {events=EPOLLIN, data=0xa} <unfinished ...>
+14    08:46:37 <... epoll_ctl resumed>) = 0
+14    08:46:37 epoll_ctl(9, EPOLL_CTL_ADD, 12, {events=EPOLLIN, data=0xc} <unfinished ...>
+14    08:46:37 <... epoll_ctl resumed>) = 0
+
+# Worker thread starts waiting for work (blocks on epoll_pwait)
+14    08:46:37 epoll_pwait(9,  <unfinished ...>
+
+# More worker threads being initialized (threads 15, 16, 17, 18)
+# Default thread pool size is 4 threads
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+16    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+17    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+18    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483661, NULL <unfinished ...>
+
+# Thread synchronization - waking up worker threads
+13    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:46:37 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+13    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 <... futex resumed>)     = 0
+13    08:46:37 futex(0xffffefbd6184, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+18    08:46:37 futex(0xffffefbd6184, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483666, NULL <unfinished ...>
+13    08:46:37 futex(0xffffefbd61e4, FUTEX_WAIT_PRIVATE, 2147483666, NULL <unfinished ...>
+18    08:46:37 <... futex resumed>)     = 0
+18    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1) = 1
+16    08:46:37 <... futex resumed>)     = 0
+18    08:46:37 futex(0xffff9be778e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+16    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17    08:46:37 <... futex resumed>)     = 0
+16    08:46:37 <... futex resumed>)     = 1
+17    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+16    08:46:37 futex(0xffff9ce7d8e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+17    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 <... futex resumed>)     = 0
+17    08:46:37 futex(0xffff9c67a8e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+15    08:46:37 futex(0xffffefbd61e4, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:46:37 <... futex resumed>)     = 0
+15    08:46:37 <... futex resumed>)     = 1
+15    08:46:37 futex(0xffff9d6808e4, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+
+# ----------------------------------------------------------------------------
+# SYSTEM INFORMATION GATHERING
+# ----------------------------------------------------------------------------
+# Reading CPU information
+13    08:46:37 readv(13, [{iov_base="!\0\0\0\0\0\0", iov_len=7}, {iov_base="\0\0\200*\236\377\377\0\0003\0\0\0\0\0\0\0p\22\0\0\0\0\0\0\20\0\0\0\0\0\0"..., iov_len=1024}], 2) = 368
+13    08:46:37 close(13)                = 0
+13    08:46:37 readv(13, [{iov_base="processor\t: 0\nBogoMIPS\t: 48.00\nF"..., iov_len=255}, {iov_base="er\t: 0x61\nCPU architecture: 8\nCP"..., iov_len=1024}], 2) = 676
+13    08:46:37 readv(13, [{iov_base="", iov_len=91}, {iov_base="", iov_len=1024}], 2) = 0
+13    08:46:37 close(13)                = 0
+13    08:46:37 readv(13, [{iov_base="processor\t: 0\nBogoMIPS\t: 48.00\nF"..., iov_len=675}, {iov_base="\n", iov_len=1024}], 2) = 676
+13    08:46:37 close(13)                = 0
+
+# ----------------------------------------------------------------------------
+# CREATING MAIN EVENT LOOP MONITORING INSTANCE
+# ----------------------------------------------------------------------------
+# This is the event loop instance that will monitor application I/O (fd=13)
+13    08:46:37 epoll_create1(EPOLL_CLOEXEC) = 13
+13    08:46:37 pipe2([14, 15], O_NONBLOCK|O_CLOEXEC) = 0
+13    08:46:37 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 16
+
+# Reading cgroup and memory information
+13    08:46:37 read(17, "0::/\n", 1023) = 5
+13    08:46:37 close(17)                = 0
+13    08:46:37 read(17, "max\n", 31)    = 4
+13    08:46:37 close(17)                = 0
+13    08:46:37 read(17, "max\n", 31)    = 4
+13    08:46:37 close(17)                = 0
+13    08:46:37 read(17, "MemTotal:        6066752 kB\nMemF"..., 4095) = 1392
+13    08:46:37 close(17)                = 0
+
+19    08:46:37 futex(0xaaaae5db0ec0, FUTEX_WAIT_PRIVATE, 2147483648, NULL <unfinished ...>
+
+# ----------------------------------------------------------------------------
+# LOADING AND EXECUTING USER SCRIPT
+# ----------------------------------------------------------------------------
+# Reading the JavaScript file (040-idleprepare.js)
+13    08:46:37 read(17, "//we run this code with this com"..., 8192) = 1297
+13    08:46:37 read(17, "", 8192)       = 0
+13    08:46:37 close(17)                = 0
+
+# Reading DNS resolver configuration
+13    08:46:37 readv(17, [{iov_base="# Generated by Docker Engine.\n# "..., iov_len=220}, {iov_base="\n", iov_len=1024}], 2) = 221
+13    08:46:37 close(17)                = 0
+13    08:46:37 readv(17, [{iov_base="# musl itself does not support N"..., iov_len=204}, {iov_base="\n", iov_len=1024}], 2) = 205
+13    08:46:37 close(17)                = 0
+
+# ----------------------------------------------------------------------------
+# ** IDLE/PREPARE PHASE BEGINS **
+# ----------------------------------------------------------------------------
+# The idle/prepare phase happens here - Node.js prepares file descriptors
+# and internal state before entering the POLL phase
+
+# Reading from internal communication pipe (event loop coordination)
+13    08:46:37 read(4, "*", 1)          = 1
+13    08:46:37 write(5, "*", 1)         = 1
+
+# ----------------------------------------------------------------------------
+# EXECUTING USER CODE - console.log() calls
+# ----------------------------------------------------------------------------
+# These are the "start" and "end" console.log outputs from the script
+13    08:46:37 write(17, "start\n", 6)  = 6
+13    08:46:37 write(17, "end\n", 4)    = 4
+
+# ----------------------------------------------------------------------------
+# CREATING TCP SERVER (net.createServer)
+# ----------------------------------------------------------------------------
+# Creating a TCP socket
+13    08:46:37 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 20
+
+# Binding to port 3000 on all interfaces (0.0.0.0)
+13    08:46:37 bind(20, {sa_family=AF_INET, sin_port=htons(3000), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+
+# Start listening with a backlog of 511 connections
+13    08:46:37 listen(20, 511)          = 0
+
+# Output: "Server listening on port 3000"
+13    08:46:37 write(17, "Server listening on port 3000\n", 30) = 30
+
+# ----------------------------------------------------------------------------
+# ** REGISTERING FILE DESCRIPTORS WITH EPOLL **
+# ** THIS IS THE IDLE/PREPARE PHASE IN ACTION **
+# ----------------------------------------------------------------------------
+# Node.js registers all I/O handles with epoll before polling
+# These epoll_ctl calls happen during the IDLE/PREPARE phase
+
+# Register internal pipe (fd=14) for monitoring
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 14, {events=EPOLLIN, data=0xe}) = 0
+
+# Register eventfd (fd=16) for monitoring
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 16, {events=EPOLLIN, data=0x10}) = 0
+
+# Register TCP server socket (fd=20) for monitoring incoming connections
+13    08:46:37 epoll_ctl(13, EPOLL_CTL_ADD, 20, {events=EPOLLIN, data=0x14}) = 0
+
+# ----------------------------------------------------------------------------
+# ** POLL PHASE - Waiting for I/O events **
+# ----------------------------------------------------------------------------
+# epoll_pwait blocks here waiting for events (timeout=0 initially)
+13    08:46:37 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+
+# Now waiting for up to 29985ms (approximately 30 seconds) for events
+# This matches the setTimeout(server.close, 30000) in the script
+13    08:46:37 epoll_pwait(13, [{events=EPOLLIN, data=0x14}], 1024, 29985, NULL, 8) = 1
+
+# ----------------------------------------------------------------------------
+# ** CLIENT CONNECTION 1 (at ~10 seconds) **
+# ----------------------------------------------------------------------------
+# epoll_pwait returned with 1 event: incoming connection on fd=20
+# Accepting the connection (non-blocking)
+13    08:46:47 accept4(20, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = 21
+13    08:46:47 write(17, "Client connected\n", 17) = 17
+
+# ** IDLE/PREPARE: Register new client socket with epoll **
+13    08:46:47 epoll_ctl(13, EPOLL_CTL_ADD, 21, {events=EPOLLIN, data=0x15}) = 0
+
+# ** POLL PHASE: Check for immediate events (timeout=0) **
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+
+# Reading data from client socket
+13    08:46:47 read(21, "Hello from client!\n", 65536) = 19
+13    08:46:47 write(17, "Received data: Hello from client"..., 35) = 35
+
+# Echoing data back to client
+13    08:46:47 write(21, "Echo: Hello from client!\n", 25) = 25
+
+# ** POLL PHASE: Check for more data **
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+
+# Reading returns 0 = EOF, client closed connection
+13    08:46:47 read(21, "", 65536)      = 0
+13    08:46:47 write(17, "Client disconnected\n", 20) = 20
+
+# ** IDLE/PREPARE: Remove closed socket from epoll **
+13    08:46:47 epoll_ctl(13, EPOLL_CTL_DEL, 21, 0xffffefbd53f8) = 0
+13    08:46:47 close(21)                = 0
+
+# ** POLL PHASE: Check for more events **
+13    08:46:47 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+
+# ** POLL PHASE: Wait for next event (20538ms remaining) **
+13    08:46:47 epoll_pwait(13, [{events=EPOLLIN, data=0x14}], 1024, 20538, NULL, 8) = 1
+
+# ----------------------------------------------------------------------------
+# ** CLIENT CONNECTION 2 (at ~12 seconds) **
+# ----------------------------------------------------------------------------
+# Another client connected
+13    08:46:49 accept4(20, NULL, NULL, SOCK_CLOEXEC|SOCK_NONBLOCK) = 21
+13    08:46:49 write(17, "Client connected\n", 17) = 17
+
+# ** IDLE/PREPARE: Register new client **
+13    08:46:49 epoll_ctl(13, EPOLL_CTL_ADD, 21, {events=EPOLLIN, data=0x15}) = 0
+
+# ** POLL PHASE **
+13    08:46:49 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+
+# Read and echo data
+13    08:46:49 read(21, "Hello from client!\n", 65536) = 19
+13    08:46:49 write(17, "Received data: Hello from client"..., 35) = 35
+13    08:46:49 write(21, "Echo: Hello from client!\n", 25) = 25
+
+# ** POLL PHASE **
+13    08:46:49 epoll_pwait(13, [{events=EPOLLIN, data=0x15}], 1024, 0, NULL, 8) = 1
+
+# Client disconnected
+13    08:46:49 read(21, "", 65536)      = 0
+13    08:46:49 write(17, "Client disconnected\n", 20) = 20
+
+# ** IDLE/PREPARE: Remove closed socket **
+13    08:46:49 epoll_ctl(13, EPOLL_CTL_DEL, 21, 0xffffefbd53f8) = 0
+13    08:46:49 close(21)                = 0
+
+# ** POLL PHASE **
+13    08:46:49 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+
+# ** POLL PHASE: Wait for remaining time (18133ms) **
+13    08:46:49 epoll_pwait(13, [], 1024, 18133, NULL, 8) = 0
+
+# ----------------------------------------------------------------------------
+# ** TIMER EXPIRES - setTimeout callback fires **
+# ----------------------------------------------------------------------------
+# The 30-second timer expired, server.close() is called
+
+# ** IDLE/PREPARE: Remove server socket from epoll **
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 20, 0xffffefbd57b8) = 0
+13    08:47:07 close(20)                = 0
+
+# ** POLL PHASE: Check for any remaining events **
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+
+# Attempting to remove file descriptors (already removed or never added)
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 17, 0xffffefbd6008) = -1 ENOENT (No such file or directory)
+13    08:47:07 close(17)                = 0
+13    08:47:07 read(4, "*", 1)          = 1
+13    08:47:07 write(5, "*", 1)         = 1
+13    08:47:07 epoll_ctl(13, EPOLL_CTL_DEL, 19, 0xffffefbd6008) = -1 ENOENT (No such file or directory)
+13    08:47:07 close(19)                = 0
+
+# ** POLL PHASE: Final checks before exit **
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+13    08:47:07 epoll_pwait(13, [], 1024, 0, NULL, 8) = 0
+
+# ----------------------------------------------------------------------------
+# ** CLEANUP - Shutting down worker threads **
+# ----------------------------------------------------------------------------
+# Waking up worker threads to shut them down
+13    08:47:07 futex(0xffff9be778e4, FUTEX_WAKE_PRIVATE, 1) = 1
+18    08:47:07 <... futex resumed>)     = 0
+
+# Signaling thread pool to exit
+13    08:47:07 write(12, "\1\0\0\0\0\0\0\0", 8) = 8
+18    08:47:07 futex(0xffff9ce7d8e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+13    08:47:07 futex(0xffff9de83a00, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+
+# Worker thread wakes up from epoll_pwait
+14    08:47:07 <... epoll_pwait resumed>[{events=EPOLLIN, data=0xc}], 1024, -1, NULL, 8) = 1
+18    08:47:07 <... futex resumed>)     = 1
+
+# Reading shutdown signal
+14    08:47:07 read(12,  <unfinished ...>
+18    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:47:07 <... futex resumed>)     = 1
+16    08:47:07 <... futex resumed>)     = 0
+
+# Closing worker thread resources
+14    08:47:07 close(10 <unfinished ...>
+16    08:47:07 futex(0xffff9c67a8e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+18    08:47:07 futex(0xffff9be77a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+18    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 <... futex resumed>)     = 1
+14    08:47:07 close(11 <unfinished ...>
+16    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 <... futex resumed>)     = 1
+17    08:47:07 futex(0xffff9d6808e4, FUTEX_REQUEUE_PRIVATE, 0, 1, 0xffff9de85264 <unfinished ...>
+14    08:47:07 close(12 <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 1
+17    08:47:07 futex(0xffff9de85264, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 1
+15    08:47:07 <... futex resumed>)     = 0
+16    08:47:07 futex(0xffff9ce7da00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+14    08:47:07 close(9 <unfinished ...>
+16    08:47:07 <... futex resumed>)     = 0
+17    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 16, NULL <unfinished ...>
+17    08:47:07 <... futex resumed>)     = 0
+15    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 16, NULL <unfinished ...>
+17    08:47:07 futex(0xffff9c67aa00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+15    08:47:07 <... futex resumed>)     = -1 EAGAIN (Resource temporarily unavailable)
+17    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 17, NULL <unfinished ...>
+15    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 17, NULL <unfinished ...>
+14    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 futex(0xffff9de83a00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+13    08:47:07 <... futex resumed>)     = 0
+14    08:47:07 <... futex resumed>)     = 1
+13    08:47:07 futex(0xffff9e2ace80, FUTEX_WAIT, 14, NULL <unfinished ...>
+15    08:47:07 <... futex resumed>)     = 0
+15    08:47:07 futex(0xffff9d680a00, FUTEX_WAKE_PRIVATE, 1) = 0
+13    08:47:07 <... futex resumed>)     = 0
+
+# ----------------------------------------------------------------------------
+# ** FINAL CLEANUP **
+# ----------------------------------------------------------------------------
+# Main thread registers remaining fds with epoll before final cleanup
+13    08:47:08 epoll_ctl(3, EPOLL_CTL_ADD, 6, {events=EPOLLIN, data=0x6}) = 0
+13    08:47:08 epoll_ctl(3, EPOLL_CTL_ADD, 8, {events=EPOLLIN, data=0x8}) = 0
+13    08:47:08 epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+
+# Closing all remaining file descriptors
+13    08:47:08 close(6)                 = 0
+13    08:47:08 close(7)                 = 0
+13    08:47:08 close(8)                 = 0
+13    08:47:08 close(3)                 = 0
+13    08:47:08 close(4)                 = 0
+13    08:47:08 close(5)                 = 0
+
+# Last worker thread exits
+19    08:47:08 <... futex resumed>)     = ?
+
+# ============================================================================
+# KEY TAKEAWAYS - IDLE/PREPARE PHASE
+# ============================================================================
+#
+# 1. IDLE PHASE: Internal callbacks run (if any)
+#    - Happens before POLL
+#    - Used by Node.js internals
+#
+# 2. PREPARE PHASE: Set up for I/O polling
+#    - File descriptors are registered with epoll (epoll_ctl ADD)
+#    - Calculate appropriate timeout for epoll_pwait
+#    - Ensure all handles are properly monitored
+#
+# 3. POLL PHASE: Wait for I/O events
+#    - epoll_pwait blocks until events arrive or timeout
+#    - Returns when network/file I/O is ready
+#    - Executes I/O callbacks
+#
+# 4. Pattern throughout trace:
+#    - epoll_ctl (IDLE/PREPARE) → epoll_pwait (POLL) → I/O operations
+#    - This repeats for each iteration of the event loop
+#
+# 5. File descriptor lifecycle:
+#    - epoll_ctl ADD    = Register for monitoring (IDLE/PREPARE)
+#    - epoll_pwait      = Wait for events (POLL)
+#    - read/write       = Process I/O (after POLL returns)
+#    - epoll_ctl DEL    = Unregister when done (IDLE/PREPARE)
+#
+# ============================================================================
