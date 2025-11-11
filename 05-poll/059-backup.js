@@ -5,7 +5,10 @@ console.log(`START`);
 const readFileCallback = (err, data) => {
   console.log(`readFileCallback ${data}`);
 };
-fs.readFile('/Users/HusseinNasser/projects/node-course-content/03-poll/test.txt', readFileCallback);
+fs.readFile(
+  "/Users/HusseinNasser/projects/node-course-content/03-poll/test.txt",
+  readFileCallback
+);
 
 const setImmediateCallback = () => {
   console.log(`setImmediateCallback`);
@@ -16,7 +19,7 @@ setImmediate(setImmediateCallback);
 // to finish its job and to place its callback (the readFileCallback)
 // into the event-loop's poll phase queue before the "main" synchronous part
 // of the this code finishes.
-for (let i = 1; i <= 100000000000; i++) {}
+for (let i = 1; i <= 10000000000; i++) {}
 
 console.log(`END`);
 // So when the event-loop starts its first tick there should be two callbacks

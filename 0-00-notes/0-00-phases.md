@@ -4,8 +4,12 @@
 
 --event loop gets initialized after the initial phase
 
-# Timer Phase
+## timers
 
-### pending callbacks
+### 1. 🥈 pending callbacks
 
-### idle, prepare
+#### 2. 🥉 idle, prepare
+
+#### 3. 🥉 idle, prepare
+
+### 4. 🥇 poll
